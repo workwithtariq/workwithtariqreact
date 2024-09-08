@@ -1,10 +1,22 @@
-import React from 'react'
-import { Header } from '../components/Header'
+import React from "react";
+import { Footer } from "../components/Footer";
+import { Experience } from "../components/Home/Experience";
+import { Header } from "../components/Home/Header/Header";
+import { Hero } from "../components/Home/Hero";
+import { Portfolio } from "../components/Home/Portfolio";
 
-export const Home = () => {
+const Home = () => {
   return (
     <>
-    <Header />
+      <Header />
+      <div className="body-container">
+      <Hero />
+      <Experience />
+      <Portfolio />
+      </div>
+      <Footer />
     </>
-  )
-}
+  );
+};
+
+export default Home;
