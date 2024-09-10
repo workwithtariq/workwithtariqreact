@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "./pages/Home";
-import "./App.css";
+import Header from "./components/Header/Header";
+import "./styles/App.css";
 
 export const App = () => {
   return (
-    <>
-      <Home />
-    </>
+    <div className="max-w-[1280px] mx-auto px-4">
+      <Header />
+    </div>
   );
 };
