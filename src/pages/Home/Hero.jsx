@@ -16,7 +16,7 @@ const Hero = () => {
           </h3>
 
           {/* Buttons */}
-          <div className="mt-8 flex justify-center space-x-4">
+          <div className="mt-8 flex justify-center gap-4 flex-col sm:flex-row md:flex-col lg:flex-row">
             <a
               href="/projects"
               className="px-6 py-3 border-2 border-black text-black rounded-full transition-all hover:bg-black hover:text-white"

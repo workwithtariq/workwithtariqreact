@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import MenuToggle from "./MenuToggle"; // Import MenuToggle
 import DesktopNav from "./DesktopNav"; // Import DesktopNav
 import MobileNav from "./MobileNav"; // Import MobileNav
-import { Link } from "react-router-dom/dist";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
