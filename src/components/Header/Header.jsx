@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MenuToggle from "./MenuToggle"; // Import MenuToggle
 import DesktopNav from "./DesktopNav"; // Import DesktopNav
 import MobileNav from "./MobileNav"; // Import MobileNav
+import { Link } from "react-router-dom/dist";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,8 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center px-4 py-6 bg-white text-black max-w-[1280px] mx-auto">
-      <div className="text-4xl font-Poppins">Tariq</div>
+      <div className="text-4xl font-Poppins">
+        <a href="/">Tariq</a></div>
       <nav>
         {/* Mobile Menu Toggle */}
         <MenuToggle isOpen={isOpen} toggleMenu={toggleMenu} />
