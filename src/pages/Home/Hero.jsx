@@ -1,6 +1,8 @@
 import React from "react";
 import ProfilePic from "../../assets/profile.jpg";
 import FacebookIcon from "../../assets/fb.svg";
+import LinkedInIcon from "../../assets/in.svg";
+import WhatsAppIcon from "../../assets/wa.svg";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
 
 const Hero = () => {
@@ -33,9 +35,9 @@ const Hero = () => {
 
           {/* Social Media Links */}
           <div className="mt-8 flex justify-center space-x-6">
-            <SocialIcons src={FacebookIcon} />
-            <SocialIcons src={FacebookIcon} />
-            <SocialIcons src={FacebookIcon} />
+            <SocialIcons iconSrc={FacebookIcon} url="https://facebook.com/workwithtariq/" />
+            <SocialIcons iconSrc={LinkedInIcon} url="https://linkedin.com/in/workwithtariq/" />
+            <SocialIcons iconSrc={WhatsAppIcon} url="https://wa.me/+8801517010100" />
           </div>
         </div>
       </div>

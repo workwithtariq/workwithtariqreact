@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const SocialIcons = ({src}) => {
+const SocialIcons = ({iconSrc, url}) => {
   return (
-    <a
-      href="https://linkedin.com"
+    <Link
+      to={url}
       className="text-gray-600 hover:text-black transition-all"
     >
-      <div className="border border-black rounded-full p-1 w-8">
-        <img src={src} alt="" />
+      <div className="border border-black rounded-full p-2 w-10">
+        <img src={iconSrc} alt="" />
       </div>
-    </a>
+    </Link>
   );
 };
 
