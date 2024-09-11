@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import Hero from "../../pages/Home/Hero"; // Adjust path as needed
 import HomeAbout from "./HomeAbout";
 import HomeContact from "./HomeContact";
@@ -7,12 +8,13 @@ import HomeProjects from "./HomeProjects";
 
 const Home = () => {
   return (
-    <div className="mb-40">
+    <div className="">
       <Hero />
       <HomeAbout />
       <HomeExperience />
       <HomeProjects />
       <HomeContact />
+      <Footer />
       {/* Other sections of the Home page */}
     </div>
   );
