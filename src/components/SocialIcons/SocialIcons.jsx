@@ -1,16 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Button from "../Button/Button"; // Import the reusable Button component
 
-const SocialIcons = ({iconSrc, url}) => {
+const SocialIcons = ({ iconSrc, url }) => {
   return (
-    <Link
-      to={url}
-      className="text-gray-600 hover:text-black transition-all"
+    <Button
+      href={url} 
+      variant="icon" // A new variant specifically for social icons
+      additionalClasses="p-2 border border-black rounded-full w-10 flex justify-center items-center"
     >
-      <div className="border border-black rounded-full p-2 w-10">
-        <img src={iconSrc} alt="" />
-      </div>
-    </Link>
+      <img src={iconSrc} alt="social-icon" className="w-full" />
+    </Button>
   );
 };
 

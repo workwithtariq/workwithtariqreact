@@ -4,6 +4,7 @@ import FacebookIcon from "../../assets/fb.svg";
 import LinkedInIcon from "../../assets/in.svg";
 import WhatsAppIcon from "../../assets/wa.svg";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
+import Button from "../../components/Button/Button"; // Import the reusable Button component
 
 const Hero = () => {
   return (
@@ -17,20 +18,18 @@ const Hero = () => {
             Full-stack JavaScript Developer
           </h3>
 
-          {/* Buttons */}
+          {/* Reusable Buttons */}
           <div className="mt-8 flex justify-center gap-4 flex-col sm:flex-row md:flex-col lg:flex-row">
-            <a
+            <Button
+              text="View Projects"
               href="/projects"
-              className="px-6 py-3 border-2 border-black text-black rounded-full transition-all hover:bg-black hover:text-white"
-            >
-              View Projects
-            </a>
-            <a
+              variant="secondary" // Secondary button styling
+            />
+            <Button
+              text="Contact Me"
               href="/contact"
-              className="px-6 py-3 bg-black text-white rounded-full transition-all hover:bg-gray-800"
-            >
-              Contact Me
-            </a>
+              variant="primary" // Primary button styling
+            />
           </div>
 
           {/* Social Media Links */}
