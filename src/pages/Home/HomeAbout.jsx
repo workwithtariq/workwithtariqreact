@@ -3,26 +3,24 @@ import ProfilePic from "../../assets/profile.jpg";
 import ExperienceIcon from "../../assets/marketing.svg";
 import EducationIcon from "../../assets/mail.svg";
 import HomeAboutCard from "./HomeAboutCard";
-import HomeAboutSectionHeader from "./HomeAboutSectionHeader";
+import HomeSectionHeader from "./HomeSectionHeader";
 import HomeAboutProfileImage from "./HomeAboutProfileImage";
 
 const HomeAbout = () => {
   return (
     <div className="mt-40">
       {/* Section Header */}
-      <HomeAboutSectionHeader subtitle="Get to Know" title="About Me" />
+      <HomeSectionHeader subtitle="Get to Know" title="About Me" />
 
       {/* HomeAbout Body */}
       <div className="flex flex-col lg:flex-row gap-8 mt-20">
-        
         {/* Profile Section */}
-        <div className="mx-auto lg:w-2/5 max-w-96">
+        <div className="mx-auto lg:w-2/5 ">
           <HomeAboutProfileImage src={ProfilePic} alt="Profile Picture" />
         </div>
 
         {/* Info Section */}
         <div className="lg:w-3/5 flex flex-col gap-6 md:flex-row lg:flex-col sm:items-center">
-          
           {/* Info Cards */}
           <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-8 text-center md:w-1/2 lg:w-full">
             {/* Experience Card */}
@@ -31,7 +29,7 @@ const HomeAbout = () => {
               title="Experience"
               lines={["1+ Years", "Full Stack Development"]}
             />
-            
+
             {/* Education Card */}
             <HomeAboutCard
               icon={EducationIcon}

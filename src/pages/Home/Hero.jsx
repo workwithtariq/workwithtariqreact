@@ -5,6 +5,8 @@ import LinkedInIcon from "../../assets/in.svg";
 import WhatsAppIcon from "../../assets/wa.svg";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
 import Button from "../../components/Button/Button"; // Import the reusable Button component
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Hero = () => {
   return (
@@ -43,9 +45,10 @@ const Hero = () => {
 
       {/* Right Section */}
       <div className="md:w-1/2 flex justify-start order-1 md:order-2">
-        <img
+        <LazyLoadImage
           src={ProfilePic}
           alt="Md Tariqul Islam"
+          effect="blur"  // Optional: Adds a blur effect during lazy loading
           className="w-full h-full lg:w-96 lg:h-96 rounded-full object-cover"
         />
       </div>

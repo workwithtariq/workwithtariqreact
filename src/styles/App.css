@@ -3,8 +3,13 @@ body {
 }
 
 .body-container {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin-left: auto;
   margin-right: auto;
 
 }
+
+.skill-container {
+  @apply border border-slate-300 rounded-[32px] w-full py-8 px-8;
+}
+

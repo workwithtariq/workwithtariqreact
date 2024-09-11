@@ -1,14 +1,35 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css"; // Optional: Adds a blur effect during loading
 import Button from "../Button/Button"; // Import the reusable Button component
+import classNames from "classnames"; // Utility for handling conditional class names
 
-const SocialIcons = ({ iconSrc, url }) => {
+const SocialIcons = ({ iconSrc, url, disabled = false, outline = true }) => {
+  const effectType = "blur"; // Reusable effect prop
+
+  const buttonClasses = classNames(
+    "border border-black rounded-full flex justify-center items-center",
+    {
+      "p-2 w-10": !disabled,
+      [outline ? "p-2" : "p-0"]: disabled, // Conditional class when disabled
+      "border-none w-8": !outline && disabled,
+    }
+  );
+
   return (
     <Button
-      href={url} 
-      variant="icon" // A new variant specifically for social icons
-      additionalClasses="p-2 border border-black rounded-full w-10 flex justify-center items-center"
+      href={url}
+      disabled={disabled}
+      outline
+      variant="icon"
+      additionalClasses={buttonClasses}
     >
-      <img src={iconSrc} alt="social-icon" className="w-full" />
+      <LazyLoadImage
+        src={iconSrc ?? ""} // Optional chaining to handle undefined iconSrc
+        alt="social-icon"
+        effect={effectType} // Reusing the effectType
+        className="w-full"
+      />
     </Button>
   );
 };
