@@ -17,19 +17,7 @@ const ProjectCardSection = () => {
       imageSrc: ProfilePic,
       title: "Project Three",
     },
-    {
-      imageSrc: ProfilePic,
-      title: "Project Three",
-    },
-    {
-      imageSrc: ProfilePic,
-      title: "Project Three",
-    },
-    {
-      imageSrc: ProfilePic,
-      title: "Project Three",
-    },
-   
+
     // Add more cards as needed
   ];
 
