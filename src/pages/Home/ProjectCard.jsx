@@ -16,8 +16,8 @@ const ProjectCard = ({ imageSrc, title }) => {
       
       {/* Two outlined buttons */}
       <div className="flex space-x-4">
-        <Button text="View Details" href="/details" variant="secondary" />
-        <Button text="Get Quote" href="/quote" variant="secondary" />
+        <Button text="Details" href="/details" variant="secondary" />
+        <Button text="Video" href="/quote" variant="secondary" />
       </div>
     </div>
   );

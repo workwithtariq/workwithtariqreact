@@ -3,6 +3,8 @@ import ProfilePic from "../../assets/profile.jpg";
 import FacebookIcon from "../../assets/fb.svg";
 import LinkedInIcon from "../../assets/in.svg";
 import WhatsAppIcon from "../../assets/wa.svg";
+import YoutubeIcon from "../../assets/yt.svg";
+import Github from "../../assets/github.svg";
 import SocialIcons from "../../components/SocialIcons/SocialIcons";
 import Button from "../../components/Button/Button"; // Import the reusable Button component
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -35,7 +37,9 @@ const Hero = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="mt-8 flex justify-center space-x-6">
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
+            <SocialIcons iconSrc={Github} url="https://github.com/workwithtariq/" />
+            <SocialIcons iconSrc={YoutubeIcon} url="https://youtube.com/@workwithtariq/" />
             <SocialIcons iconSrc={FacebookIcon} url="https://facebook.com/workwithtariq/" />
             <SocialIcons iconSrc={LinkedInIcon} url="https://linkedin.com/in/workwithtariq/" />
             <SocialIcons iconSrc={WhatsAppIcon} url="https://wa.me/+8801517010100" />
